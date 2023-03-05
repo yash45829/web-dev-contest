@@ -3,7 +3,7 @@ This repo is made in order to participate in web dev contest and submitting my p
 <h1>Design Idea</h1>
 <ul><li>
 <h3>It is a online student result management system that can be provided to colleges and schools in order to communicate results of students online .</h3></li>
-<li><h3>By using this web , teachers can directly upload marks of students of their batches .</li><li> <h3>In order to upload result teachers have to login page with thier name and Id provided by Their intitution.</h3?</li>
+<li><h3>By using this web , teachers can directly upload marks of students of their batches .</li><li> <h3>In order to upload result teachers have to login web page with thier name and Id provided by Their institution.</h3?</li>
 <li> <h3>Students can see thier results by entering enrollment no and faculty no .</h3?</li>
 <h1>Some previews of web -srms</h1>
 
