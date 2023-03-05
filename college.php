@@ -5,18 +5,6 @@ $showError = false;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     include './connect.php';
     
-// $server = "localhost";
-// $username = "root";
-// $password = "";
-// $database = "student_result";
-
-// $conn = mysqli_connect($server, $username, $password, $database);
-// if (!$conn){
-//     echo "success";
-// // }
-// // else{
-//     die("Error". mysqli_connect_error());
-// }
 
 
     $enroll_no = $_POST["enroll_no"];
@@ -33,11 +21,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $_SESSION['enroll_no'] = $enroll_no;
         $_SESSION['faculty_no'] = $faculty_no;
         header("location: result1.php");
-        // echo "hello log in ";
-        // echo " $output ";
+       
 
       $row = mysqli_fetch_assoc($output) ;
-      //     echo "id: " . $row["enroll_no"]. " - Name: " . $row["first_name"]. " " . $row["last_name"]. "<br>";
+     
     } 
     else{
         $showError = "Invalid Credentials";
