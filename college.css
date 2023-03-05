@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(203, 245, 245);
+    font-family: 'Poppins', sans-serif;
+ 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    background-color: rgba(135, 207, 235, 0.404);
+    box-shadow: 0px 0px 20px rgb(37, 196, 22);
+    z-index: 5;
+}
+
+.logo{
+    display: flex;
+    /* border: 1px solid black; */
+    padding:  0 1vw;
+    justify-content: start;
+    align-items: center;
+
+}
+.logo img{
+    margin: 0.5vw;
+    /* border: 1px solid black; */
+    height: 10vh;
+
+}
+.head{
+    text-align: start;
+    margin: 0.5vw;
+    /* border: 1px solid black; */
+} 
+.head h1{
+    font-size: 1.5em;
+}
+nav{
+    /* border: 1px solid black; */
+    margin-right: 2vw;
+
+}
+
+nav ul{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+nav ul li {
+list-style: none;
+margin: 1em;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+}
+nav ul li a:hover{
+    color:rgb(221, 20, 171);
+    transition-duration: 200ms;
+}
+/* .dropdown{ */
+  /* display: flex;
+  flex-direction: column; */
+  /* border: 1px solid black; */
+  /* padding: 2px; */
+/* } */
+
+
+.ondrop{
+  display: none;
+  /* flex-direction: column; */
+  /* row-gap: 10px; */
+  /* width: 50px; */
+    /* display: none; */
+    top: 54px;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f9f9f9;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: start;
+  
+  /* flex-direction: column; */
+  /* font-size: 2em; */
+  /* padding: 20px; */
+  /* z-index: 10; */
+  float: none;
+}
+.ondrop ul {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  align-items: start;
+    text-align: start;
+  /* border: 1px solid black; */
+  flex-direction: column;
+  padding: 0px;
+}
+.ondrop li {
+  /* border: 1px solid black; */
+  padding: 0px;
+    margin: 0px;
+}
+.ondrop ul li a {
+  float: none;
+  color: black; 
+  margin: 0px;
+  padding: 4px 4px;
+  
+  text-decoration: none;
+  display: block;
+  text-align: start;
+  /* border: 1px solid black; */
+
+}
+.dropdown:hover  .ondrop{
+  cursor: pointer;
+  display: block;
+  /* border: 1px solid black; */
+
+  /* flex-direction: column; */
+
+}
+
+.left{
+  background: url("./amu\ bg.png");
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+
+/* form{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border: 1px solid black;
+    border-radius: 0.5%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.753);
+    
+} */
+form{
+    /* position: relative;
+    top: 45px; */
+    width: 20%;
+    height: 50%;
+    display: flex;
+    background-color: rgb(135, 207, 235);
+    flex-direction: column;
+    /* border: 2px solid green; */
+    padding: 10px;
+    margin: 10vh 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(40, 41, 41, 0.753);
+  }
+  form p{
+    text-align: center;
+    padding: 5px 0px ;
+    margin-bottom: 2px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  form input,.td{
+    margin: 5px;
+    /* margin-bottom: 12px; */
+    padding-left: 12px;
+    padding: 5px;
+    font-size: 15px;
+    /* box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.753); */
+    
+
+    font-family: "Work Sans", sans-serif;
+    border: none;
+    border-radius: 8px;
+    outline-style: none;
+
+  }
+  form input:focus{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.753);
+    
+  }
+
+  form label{
+    margin: 5px;
+    /* margin-bottom: 6px; */
+    font-weight: 700;
+  }
+ 
+  form button{
+    border-radius: 12px;
+    height: 45px;
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #20bc7e;
+    border-style: none;
+  }
+  form button:hover{
+    cursor: pointer;
+  }
+  
+  .right h2{
+    margin: 2vw;
+  }
+ .right ul{
+    margin: 1vw;
+ }
+  .right ul li{
+    list-style: none;
+    margin: 1vw;
+  }
+  .right ul li a{
+    text-decoration: none;
+  }
+  .admin , .contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5vh 0px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.753);
+    background-color: rgba(100, 97, 97, 0.336);
+
+
+    padding: 10vh;
+   
+  }
+  .left1,.right2{
+    /* border: 1px solid black; */
+    width: 40%;
+    text-align: center;
+ 
+
+  } 
+  .left1 img {
+    height: 20vh;
+    
+  }
+  .right1,.left2{
+    padding: 5vh;
+    width: 60%;
+    /* border: 1px solid black; */
+    text-align: start;
+    font-size: 1.15em;
+  }
+.right2{
+    text-align: start;
+    padding-left: 40vw;
+
+}
+.right2 p{
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    font-size: 1.1em;
+ 
+    background-color: rgba(100, 97, 97, 0.336);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.753);
+    padding: 10px;
+}
+section{
+  margin: 10vh;
+}
+table{
+  margin: 4vh;
+}
+
+thead tr td{
+  margin: 2vh;
+  padding: 2vh ;
+  font-weight: 600;
+  background-color: rgb(192, 255, 200);
+  border-radius: 10px;
+}
+ tbody tr td{
+  margin: 10px;
+  padding: 2vh ;
+  background-color: pink;
+  border-radius: 10px;
+}
+button {
+  /* margin-left: 40vh; */
+  padding: 10px;
+  background-color: rgb(228, 255, 192);
+  border-radius: 10px;
+
+}
+button a{
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  font-weight: 600;
+}
+button:hover{
+  cursor: pointer;
+}
+.form{
+  width: fit-content;
+}
